@@ -19,14 +19,33 @@ The dataset has 10 columns amd 5000 rows to be observed.
 #### Data Cleaning:
 The dataset was transformed with Power Query Editor as follows:
 - Replacing Null values with Zero
-- Each of the columns in the table was validated to have correct data type
-#### DAX
-# The measures used in Visualization includes:
+- Each of the columns in the table was validated to have correct data type.
 - Created a calculated column in powerBI table view for average speed of Answer in Seconds
-  *  AVERAGE SPEED OF ANSWER = DIVIDE('call centre data'[Speed of answer in seconds], [Total calls Answered])
-  *Total calls = CALCULATE('call centre data'[Total calls Answered]) + 'call centre data'[Total calls unanswered]
-  *Total calls Answered = COUNTX(FILTER('call centre data', 'call centre data'[Answered(Yes/No)] ="Yes"), 'call centre data'[Answered(Yes/No)])
-  * Total calls unanswered = COUNTX(FILTER('call centre data', 'call centre data'[Answered(Yes/No)] = "No"), 'call centre data'[Answered(Yes/No)])
-  * Total resolved = COUNTX(FILTER('call centre data', 'call centre data'[Resolved] = "Yes"), 'call centre data'[Resolved])
-  * Total unresolved = COUNTX(FILTER('call centre data', 'call centre data'[Resolved] = "No"), 'call centre data'[Resolved])
+  
+#### DAX  
+  ``` Power BI
+Total calls = CALCULATE('call centre data'[Total calls Answered]) + 'call centre data'[Total calls unanswered]);
+  ```
+  ```
+Total calls Answered = COUNTX(FILTER('call centre data', 'call centre data'[Answered(Yes/No)] ="Yes"), 'call centre data'[Answered(Yes/No)]);
+  ```
+  ```
+Total calls unanswered = COUNTX(FILTER('call centre data', 'call centre data'[Answered(Yes/No)] = "No"), 'call centre data'[Answered(Yes/No)]);
+  ```
+  ```
+Total resolved = COUNTX(FILTER('call centre data', 'call centre data'[Resolved] = "Yes"), 'call centre data'[Resolved]);
+  ```
+  ```
+Total unresolved = COUNTX(FILTER('call centre data', 'call centre data'[Resolved] = "No"), 'call centre data'[Resolved]);
+  ```
+  ```
+Total satisfied = CALCULATE(COUNT('call centre data'[Satisfaction rating]),FILTER('call centre data' ,'call centre data'[Satisfaction rating]), {3,4,5});
 
+  ```
+  ```
+Average satisfaction = DIVIDE([sum of satisfaction],[Total satisfied]);
+ ```
+ ```
+AVERAGE SPEED OF ANSWER = DIVIDE('call centre data'[Speed of answer in seconds], [Total calls Answered])
+ ```
+#### Insights

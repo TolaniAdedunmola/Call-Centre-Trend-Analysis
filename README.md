@@ -11,3 +11,13 @@ Possible KPI includes (but not limited to):
 #### Data source:
 Dataset used for this task was given by [Pwc](https://www.pwc.ch/en/careers-with-pwc/students/virtual-case-experience.html)
 #### Dataset: [Call Centre Trends](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fcdn.theforage.com%2Fvinternships%2Fcompanyassets%2F4sLyCPgmsy8DA6Dh3%2F01%2520Call-Center-Dataset.xlsx&wdOrigin=BROWSELINK)
+
+#### Data Preparation:
+Started by connecting to excel datasource then loaded the dataset into Power Bi desktop.
+The dataset has 10 columns amd 5000 rows to be observed.
+
+#### Data Cleaning:
+The dataset was transformed with Power Query Editor as follows:
+- Replacing Null values with Zero
+- Each of the columns in the table was validated to have correct data type
+

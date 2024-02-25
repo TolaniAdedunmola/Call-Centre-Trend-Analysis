@@ -65,7 +65,7 @@ AVERAGE SPEED OF ANSWER = DIVIDE('call centre data'[Speed of answer in seconds],
 Data visualization for data analysis(DAX) was done with Microsoft Power BI Desktop:
 Shows visualisation from call Centre Trends
 
-[call centre dashboard]()
+[call centre dashboard](https://github.com/TolaniAdedunmola/Call-Centre-Trend-Analysis/blob/main/call%20centre%20trend%20dashboard.PNG)
 
 #### Insights
 

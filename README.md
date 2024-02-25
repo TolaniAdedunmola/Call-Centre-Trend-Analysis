@@ -6,7 +6,7 @@
 - [Data Source](#data-source)
 - [Data Preparation](#data-preparation)
 - [Data Cleaning](#data-cleaning)
-- [Data Analysis (DAX)](data-analysis-dax)
+- [Dax](dax)
 - [Insights](#insights)
 - [Recommendations](#recommendations)
 #### Project Description

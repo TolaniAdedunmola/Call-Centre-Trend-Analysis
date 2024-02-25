@@ -65,6 +65,8 @@ AVERAGE SPEED OF ANSWER = DIVIDE('call centre data'[Speed of answer in seconds],
 Data visualization for data analysis(DAX) was done with Microsoft Power BI Desktop:
 Shows visualisation from call Centre Trends
 
+[call centre dashboard]()
+
 #### Insights
 
 - Total calls received was 5000 in which number calls answered and calls unanswered was 4054 and 946 respectively.
@@ -73,7 +75,7 @@ Shows visualisation from call Centre Trends
 - Average customer satisfaction rating is 3.40.
 - The agent with the highest number of answered calls is Jim (536 calls) while Stewart had the least answered calls with 477 calls.
 - The month of January had the highest Total calls answered followed by February and March. Also, the Month of February had the highest total calls unanswered.
-- More People had streaming, technical support and payment related issues respectively hence making them have the highest number of calls.
+- More People had streaming, technical support and payment related issues respectively hence making them have the highest number of calls in these categories.
 
 #### Recommendations
 - Rigorous test for quality assurance is recommended. This can be done through call monitoring and scoring.
